@@ -48,6 +48,7 @@ export interface DropdownProps {
   arrow?: boolean | DropdownArrowOptions;
   trigger?: ('click' | 'hover' | 'contextMenu')[];
   overlay: React.ReactElement | OverlayFunc;
+  onOverlayClick?: (event: Event) => void;
   onVisibleChange?: (visible: boolean) => void;
   visible?: boolean;
   disabled?: boolean;
